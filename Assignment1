@@ -1,0 +1,116 @@
+Assignment
+
+TOPIC:Python basic variable
+
+Q1] Declare two variables ,’X’ and ‘Y’,and assign them integer values. Swap the value of these variables without using any temporary variable.
+Ans:
+X=20
+y=50
+x,y=y,x
+
+Before swapping:
+Value of x =20 and y=50
+After swapping
+Value of x=50 and y=20
+
+
+Q2] Creates a program that calculates  the area of a rectangle. Take the length and width as input from the user and store them in variables. Calculate and display the area.
+
+Ans:
+Area of rectangle formulae is length*width
+Program is 
+
+length=45
+width=50
+area=length*width
+
+Then i will print area then system give me value of the area is 2250
+
+Q3]Write a python program that converts temperature from celsius to Fahrenheit. Take the temperature in celsius as input ,store it in a variable,convert it to Fahrenheit, and display the result
+
+Ans:
+The formula of Fahrenheit is Fahrenheit = celsius *1.8+32
+ The program is 
+celsius=43.8
+fahrenheit=(celsius *1.8+32)
+
+ Then i will print fahrenheit then system give me 110.84
+Because fahrenheit=(43.8*1.8=32)=110.84
+
+
+TOPIC:String based question 
+
+Q1]write a python program that takes a String as input and print the length of the String.
+
+Ans:
+s=”aditi”
+len(s)
+
+Then system give me the length of the string s
+The length of the string is in 5
+
+Q2] Create a program that takes a sentence from the user and counts the number of vowels in the string
+
+Ans:
+def count_vowels(sentence):
+    vowels = "aeiouAEIOU"
+    vowel_count = 0
+    
+    for char in sentence:
+        if char in vowels:
+            vowel_count+= 1
+            
+            return vowel_count
+        
+        #Get input from the user
+        user_input =("Nishigandha Rahade")
+        
+        #call the function to count vowels
+        num_vowels = count_vowels(user_input)
+        
+        #Display the result 
+        print(f"Number of vowels in the sentence: {num_vowels}")
+
+Enter a sentence :Nishigandha Rahade
+Number of vowels in the sentence :7
+
+Q3]Given a String ,reverse the order of characters using string slicing and print the reverse string .
+Ans:
+ The program is 
+
+s=”my name is nishigandha”
+S[::-1]
+S
+
+The original string is :” my name is nishigandha”
+The reversed sliced string is : 'ahdnagihsin si eman ym'
+
+Q4]write a program that takes as a string as input and checks if it is a palindrome (reads the same forwards and backwards)
+Ans:
+s1=”abba”
+rev_str = reversed(s1)
+if list(s1) == list(rev_str):
+   print("The string is a palindrome.")
+else:
+   print("The string is not a palindrome.")
+
+Output :string is palindrom
+
+Note :In this program,we have taken a string stored in s1
+
+We reverse the string using the built-in function reversed().since this function returns a reversed object,we use the lisr() function to convert them into a list before comparing.
+
+
+Q5]create a program that takes a string as input and removes all the spaces from it. Print the modified string without spaces
+
+Ans:
+The program is 
+s2="this is my first assignment"
+s2.replace(" ","")
+
+Note:
+Use the replace() method to replace spaces with an empty string:
+
+The output is:'thisismyfirstassignment'
+
+
